@@ -1,0 +1,381 @@
+
+/* VARIABLES */
+    /* COLORES */
+    $negro: #191F0B;
+    $naranja: #FA3A00;
+    $rojo: #FF1A1C;
+    $rojo-oscuro: #920e10;
+    $fucsia: #EB0A40;
+    $blanco:#FFFFFF;
+    $sombra: 4px 4px 15px rgb(187, 187, 187);
+    /* TIPOGRAFÍA */
+        $serif: 'Domine';
+        $rubik:'Rubik', sans-serif;
+        $liviano: 300;
+        $mediano: 500;
+        $negrita: 700;
+    /* TAMAÑOS */
+        $xxs: 0.125rem;
+        $xs: 0.25rem;
+        $s: 0.5rem;
+        $m: 1rem;
+        $l: 1.5rem;
+        $xl: 2rem;
+        $xxl: 3rem;
+        $xxxl: 4rem;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: $negro;
+    }
+    img {
+        border-radius: $xxs;
+    }
+/* BARRA DE NAVEGACIÓN */
+    .menu {
+        font-family: $rubik;
+        font-weight: $liviano;
+        font-size: $l;
+            .logo {
+                font-family: $serif;
+                font-size: $xl;
+                &:hover {
+                    text-decoration: none;
+                    color: $negro;
+                }
+            }
+        a:hover {
+            color: $rojo;
+        }
+        .active a {
+            color: $rojo;
+            font-family: $rubik;
+            font-weight: $mediano;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .boton-menu {
+            font-family: $serif;
+            font-size: $l;
+        }
+    }
+
+/* INTRODUCCIÓN */
+    .intro {
+        font-family: $serif; 
+        font-size: $xl;
+        margin-top: $xxl;
+        margin-bottom: $l;
+        color: $negro;
+    }
+/* PROYECTOS */
+    .perrunos-index, .muyu-index, .pangea-index {
+        margin-bottom: $l;
+            .proyectos_img {
+                padding-top: $s;
+                padding-bottom: $xs;
+                padding-right: $s;
+                margin-right: $s;
+                width: 100vw;
+                height: auto;
+            }
+            .proyectos_des a{
+                font-family: $rubik;
+                font-weight: $mediano;
+                color:$negro;
+                &:hover {
+                    text-decoration: none;
+                }
+                h6{
+                    font-family: $rubik;
+                    font-weight: $liviano;
+                }
+                h5 {
+                    font-family: $serif;
+                    &:hover{
+                    color: $rojo;
+                    }
+                }
+            }
+    }
+
+    @media (min-width: 960px) {
+        .perrunos-index, .muyu-index, .pangea-index {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+                .proyectos_des {
+                    align-self: flex-end;
+                }
+                .proyectos_img {
+                    width: unset;
+                    height:auto;
+                }
+    }
+}
+
+.proyectos-proyectos {
+    margin-top: $xxxl;
+}
+.proyectos-titulo {
+    color:$negro;
+    font-family: $rubik;
+    font-weight: $mediano;
+    margin-top: $xl;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.a_proyectos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: $xxxl;
+    margin-bottom: $xl;
+    h3 {
+        font-family: $serif;
+        color: $negro;
+        a:hover {
+            color:$rojo;
+        }
+    }
+}
+
+/* CONTACTO */
+    .contacto_index {
+        font-family: $rubik;
+        font-weight: $negrita;
+        font-size: $xl;
+        padding-top: $xxl;
+        padding-bottom: $xl;
+        color: $negro;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        a:hover {
+            color: $rojo;
+        }
+
+    }
+
+@media (min-width: 960px) {
+        .proyectos-titulo, .a_proyectos, .contacto_index {
+        display: flex;
+        justify-content: flex-start;
+        }
+    }
+
+/* PIE DE PÁGINA */
+    footer {
+        background: url(./../archivos/fondo-footer.svg) no-repeat center center;
+        background-size: cover;
+    }
+    .footer {
+        font-family: $rubik;
+        font-weight: $liviano;
+        color: $blanco;
+        font-size: $l;
+        margin-top: $xxl;
+        padding: $m;
+        a{
+            color: $blanco;
+            fill: $blanco;
+            &:hover {
+                color: $rojo;
+                text-decoration: none;
+            }
+        svg:hover {
+            fill: $rojo;
+        }
+    
+    }
+}
+/* EN PROYECTOS */
+.breadcrumb-gabi {
+    margin-top: $xl;
+    margin-bottom: $l;
+    h6 {
+        font-family: $rubik;
+        font-weight: $liviano;
+        color: $rojo-oscuro;
+        a {
+            color: $rojo-oscuro;
+            padding-right:$xs;
+            &:hover {
+                text-decoration: none;
+                color:$naranja;
+            }
+        }
+    }
+}
+/* PÁGINA EN CONSTRUCCIÓN */
+.en-construccion {
+    font-family: $rubik;
+    font-weight: $mediano;
+    h2 {
+        font-size: $xxl;
+        margin-top: $m;
+        margin-bottom: $l;
+    }
+    h4 {
+        font-size: $l;
+        padding-top: $l;
+        a:hover {
+            color: $rojo;
+            text-decoration: line-through;
+        }
+    }
+}
+/* SOBRE MI */
+    .sobre-mi {
+        margin-top: $xl;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $rubik;
+        font-weight: $liviano;
+        font-size: $m;
+        color: $negro;
+        img {
+            margin-bottom: $m;
+        }
+        .presentación {
+            padding-top: $m;
+            margin-left: $l;
+        }
+        .enlaces {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-right: $xs;
+            font-family: $rubik;
+            font-weight: $mediano;
+            a:hover {
+                text-decoration: none;
+                color: $naranja;
+            }
+            .iconos svg:hover {
+                    fill: $rojo;
+                }
+            }
+        }
+    
+    @media (min-width: 960px) {
+        .sobre-mi {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        .presentación {
+            padding-left: $m;
+        }
+        img {
+            padding-right: $m;
+        }
+        .enlaces {
+            padding-top: $s;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        }
+    }
+/* PROYECTO PERRUNOS */
+    .proyecto-perrunos-inicio {
+        color: $negro;
+        margin-top: $xxl;
+        display: flex;
+        flex-direction: column;
+        .intro-perrunos{
+            padding-top: $m;
+            h1 {
+                font-family: $rubik;
+                font-weight: $negrita;
+                font-size: $xl;
+            }
+            p {
+                font-family: $rubik;
+                font-weight: $liviano;
+                font-size: $m;
+            }
+        }
+        .perrunos-logo {
+            margin-bottom: $xl;
+        }
+    }
+    .desarrollo-perrunos {
+        color: $negro;
+        h4 {
+            font-family: $rubik;
+            font-weight: $negrita;
+            font-size: $l;
+            padding-top: $m;
+        }
+        h5 {
+            font-family: $rubik;
+            font-weight: $mediano;
+            font-size: $m;
+        }
+        h6 {
+            font-family: $rubik;
+            font-weight: $mediano;
+            font-size: $l;
+            color: $fucsia;
+            padding-top: $l;
+        }
+        p {
+            font-family: $rubik;
+            font-weight: $liviano;
+            font-size: $m;
+        }
+        img {
+            padding-top: $m;
+            padding-bottom: $m;
+        }
+        .citas {
+            font-family: $serif;
+            font-size: $m;
+        }
+        .wireframe, .prototipo{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .logo-final {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+@media (min-width: 960px) {
+    .proyecto-perrunos-inicio {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: $l;
+    }
+    .logo-final {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 960px) {
+    .ancho {
+        width: 80vw;
+        height: auto;
+    }
+}

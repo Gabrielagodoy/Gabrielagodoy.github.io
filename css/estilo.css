@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* COLORES */
+/* TIPOGRAFÍA */
+/* TAMAÑOS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #191F0B; }
+
+img {
+  border-radius: 0.125rem; }
+
+/* BARRA DE NAVEGACIÓN */
+.menu {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem; }
+  .menu .logo {
+    font-family: "Domine";
+    font-size: 2rem; }
+    .menu .logo:hover {
+      text-decoration: none;
+      color: #191F0B; }
+  .menu a:hover {
+    color: #FF1A1C; }
+  .menu .active a {
+    color: #FF1A1C;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500; }
+    .menu .active a:hover {
+      text-decoration: none; }
+  .menu .boton-menu {
+    font-family: "Domine";
+    font-size: 1.5rem; }
+
+/* INTRODUCCIÓN */
+.intro {
+  font-family: "Domine";
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #191F0B; }
+
+/* PROYECTOS */
+.perrunos-index, .muyu-index, .pangea-index {
+  margin-bottom: 1.5rem; }
+  .perrunos-index .proyectos_img, .muyu-index .proyectos_img, .pangea-index .proyectos_img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    width: 100vw;
+    height: auto; }
+  .perrunos-index .proyectos_des a, .muyu-index .proyectos_des a, .pangea-index .proyectos_des a {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    color: #191F0B; }
+    .perrunos-index .proyectos_des a:hover, .muyu-index .proyectos_des a:hover, .pangea-index .proyectos_des a:hover {
+      text-decoration: none; }
+    .perrunos-index .proyectos_des a h6, .muyu-index .proyectos_des a h6, .pangea-index .proyectos_des a h6 {
+      font-family: "Rubik", sans-serif;
+      font-weight: 300; }
+    .perrunos-index .proyectos_des a h5, .muyu-index .proyectos_des a h5, .pangea-index .proyectos_des a h5 {
+      font-family: "Domine"; }
+      .perrunos-index .proyectos_des a h5:hover, .muyu-index .proyectos_des a h5:hover, .pangea-index .proyectos_des a h5:hover {
+        color: #FF1A1C; }
+
+@media (min-width: 960px) {
+  .perrunos-index, .muyu-index, .pangea-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .perrunos-index .proyectos_des, .muyu-index .proyectos_des, .pangea-index .proyectos_des {
+      align-self: flex-end; }
+    .perrunos-index .proyectos_img, .muyu-index .proyectos_img, .pangea-index .proyectos_img {
+      width: unset;
+      height: auto; } }
+
+.proyectos-proyectos {
+  margin-top: 4rem; }
+
+.proyectos-titulo {
+  color: #191F0B;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.a_proyectos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+  .a_proyectos h3 {
+    font-family: "Domine";
+    color: #191F0B; }
+    .a_proyectos h3 a:hover {
+      color: #FF1A1C; }
+
+/* CONTACTO */
+.contacto_index {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: #191F0B;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .contacto_index a:hover {
+    color: #FF1A1C; }
+
+@media (min-width: 960px) {
+  .proyectos-titulo, .a_proyectos, .contacto_index {
+    display: flex;
+    justify-content: flex-start; } }
+
+/* PIE DE PÁGINA */
+footer {
+  background: url(./../archivos/fondo-footer.svg) no-repeat center center;
+  background-size: cover; }
+
+.footer {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  padding: 1rem; }
+  .footer a {
+    color: #FFFFFF;
+    fill: #FFFFFF; }
+    .footer a:hover {
+      color: #FF1A1C;
+      text-decoration: none; }
+    .footer a svg:hover {
+      fill: #FF1A1C; }
+
+/* EN PROYECTOS */
+.breadcrumb-gabi {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem; }
+  .breadcrumb-gabi h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    color: #920e10; }
+    .breadcrumb-gabi h6 a {
+      color: #920e10;
+      padding-right: 0.25rem; }
+      .breadcrumb-gabi h6 a:hover {
+        text-decoration: none;
+        color: #FA3A00; }
+
+/* PÁGINA EN CONSTRUCCIÓN */
+.en-construccion {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500; }
+  .en-construccion h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem; }
+  .en-construccion h4 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem; }
+    .en-construccion h4 a:hover {
+      color: #FF1A1C;
+      text-decoration: line-through; }
+
+/* SOBRE MI */
+.sobre-mi {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #191F0B; }
+  .sobre-mi img {
+    margin-bottom: 1rem; }
+  .sobre-mi .presentación {
+    padding-top: 1rem;
+    margin-left: 1.5rem; }
+  .sobre-mi .enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.25rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500; }
+    .sobre-mi .enlaces a:hover {
+      text-decoration: none;
+      color: #FA3A00; }
+    .sobre-mi .enlaces .iconos svg:hover {
+      fill: #FF1A1C; }
+
+@media (min-width: 960px) {
+  .sobre-mi {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    .sobre-mi .presentación {
+      padding-left: 1rem; }
+    .sobre-mi img {
+      padding-right: 1rem; }
+    .sobre-mi .enlaces {
+      padding-top: 0.5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start; } }
+
+/* PROYECTO PERRUNOS */
+.proyecto-perrunos-inicio {
+  color: #191F0B;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column; }
+  .proyecto-perrunos-inicio .intro-perrunos {
+    padding-top: 1rem; }
+    .proyecto-perrunos-inicio .intro-perrunos h1 {
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      font-size: 2rem; }
+    .proyecto-perrunos-inicio .intro-perrunos p {
+      font-family: "Rubik", sans-serif;
+      font-weight: 300;
+      font-size: 1rem; }
+  .proyecto-perrunos-inicio .perrunos-logo {
+    margin-bottom: 2rem; }
+
+.desarrollo-perrunos {
+  color: #191F0B; }
+  .desarrollo-perrunos h4 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 1rem; }
+  .desarrollo-perrunos h5 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 1rem; }
+  .desarrollo-perrunos h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #EB0A40;
+    padding-top: 1.5rem; }
+  .desarrollo-perrunos p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 1rem; }
+  .desarrollo-perrunos img {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .desarrollo-perrunos .citas {
+    font-family: "Domine";
+    font-size: 1rem; }
+  .desarrollo-perrunos .wireframe, .desarrollo-perrunos .prototipo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column; }
+    .desarrollo-perrunos .wireframe img, .desarrollo-perrunos .prototipo img {
+      width: 100%;
+      height: auto; }
+  .desarrollo-perrunos .logo-final {
+    display: flex;
+    justify-content: center; }
+
+@media (min-width: 960px) {
+  .proyecto-perrunos-inicio {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem; }
+  .logo-final {
+    display: flex;
+    justify-content: center; } }
+
+@media (max-width: 960px) {
+  .ancho {
+    width: 80vw;
+    height: auto; } }
